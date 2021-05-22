@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+  <a-scene background="color:white">
+
+    <a-camera position="0 7 10"></a-camera>
+
+    <a-assets timeout="10000">
+    
+      <a-asset-item id="bench" src="./Models/Bench/Park Bench.gltf"></a-asset-item>
+
+      <a-asset-item id="cat" src="./Models/Cat/Mesh_Cat.gltf"></a-asset-item>
+
+      <a-asset-item id="girl" src="./Models/Girl/model.gltf"></a-asset-item>
+
+      <a-asset-item id="lamp" src="./Models/Lamp/lampost.gltf"></a-asset-item>
+
+      <a-asset-item id="road" src="./Models/Road/1229Road.gltf"></a-asset-item>
+
+      <a-asset-item id="sky" src="./Models/Sky/Catalina.gltf"></a-asset-item>
+
+      <img id="bg" src="./Images/d114ba80b84a27af183e48cd19dbdf82.jpg">
+
+    </a-assets>
+
+    <a-sky color="#222831"></a-sky>
+
+    <a-entity light="type: ambient"></a-entity>
+    <a-entity light="type: point; intensity: 2.35; castShadow: true" position="-7 6 -2"></a-entity>
+    
+    <a-entity position="0 0 0" scale="0.0999 0.0999 0.0999" gltf-model="#road" shadow="receive: true" visible="true">
+    </a-entity>
+    
+    <a-entity position="0 7 -5" scale="8 8 8" gltf-model="#sky">
+    </a-entity>
+
+    <a-entity position="-1.5 1.8 -0.5" scale="0.015 0.015 0.015" gltf-model="#bench" shadow="cast: true;">
+    </a-entity>
+
+    <a-entity position="0 0.3 -2" scale="2 2 2" rotation="0 270 0" gltf-model="#girl" shadow="cast: true;">
+    </a-entity>
+
+    <a-entity position="6 1.8 1" scale="0.03 0.03 0.03" rotation="0 -60 0" gltf-model="#cat" shadow="cast: true;">
+    </a-entity>
+
+    <a-entity position="-7 0 -2" scale="0.3 0.3 0.3" gltf-model="#lamp" shadow="cast: true;">
+    </a-entity>
+
+  </a-scene>
+</body>
+
+</html> -->
